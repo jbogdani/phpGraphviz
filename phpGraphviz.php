@@ -44,7 +44,7 @@ class phpGraphviz
 	 */
 	private function makeDotFile($remotePath)
 	{
-		$this->dot_file = sys_get_temp_dir() . uniqid('dot') . '.dot';
+		$this->dot_file = sys_get_temp_dir() . '/' . uniqid('dot') . '.dot';
 		
 		$dot_content = file_get_contents($remotePath);
 		
